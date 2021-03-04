@@ -4,17 +4,17 @@
     {
       "name": "HelloWorldIntent",
       "phrases": [
-        "hello", 
-        "say hello", 
+        "hello",
+        "say hello",
         "say hello world"
       ]
     },
     {
       "name": "MyNameIsIntent",
       "phrases": [
-        "{name}", 
-        "my name is {name}", 
-        "i am {name}", 
+        "{name}",
+        "my name is {name}",
+        "i am {name}",
         "you can call me {name}"
       ],
       "inputs": [
@@ -65,6 +65,26 @@
             "name": "WELCOME"
           }
         ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "stop",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      },
+      {
+        "data": [
+          {
+            "text": "cancel",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
       }
     ]
   }

@@ -39,7 +39,11 @@
       "alexa": {
         "name": "AMAZON.CancelIntent"
       },
-      "phrases": ["cancel", "cancel please", "please cancel"]
+      "phrases": [
+        "cancel",
+        "cancel please",
+        "please cancel"
+      ]
     },
     {
       "name": "HelpIntent",
@@ -61,28 +65,50 @@
       "alexa": {
         "name": "AMAZON.StopIntent"
       },
-      "phrases": ["stop", "stop please", "please stop", "bitte hör auf"]
+      "phrases": [
+        "stop",
+        "stop please",
+        "please stop",
+        "bitte hör auf"
+      ]
     },
     {
       "name": "YesIntent",
       "alexa": {
         "name": "AMAZON.YesIntent"
       },
-      "phrases": ["yes", "yeah", "yep", "sure", "okay"]
+      "phrases": [
+        "yes",
+        "yeah",
+        "yep",
+        "sure",
+        "okay"
+      ]
     },
     {
       "name": "NoIntent",
       "alexa": {
         "name": "AMAZON.NoIntent"
       },
-      "phrases": ["no", "nope", "na"]
+      "phrases": [
+        "no",
+        "nope",
+        "na"
+      ]
     },
     {
       "name": "RepeatIntent",
       "alexa": {
         "name": "AMAZON.RepeatIntent"
       },
-      "phrases": ["can you repeat that", "repeat that", "please repeat", "what", "say that again", "repeat"]
+      "phrases": [
+        "can you repeat that",
+        "repeat that",
+        "please repeat",
+        "what",
+        "say that again",
+        "repeat"
+      ]
     }
   ],
   "alexa": {
@@ -109,6 +135,26 @@
             "name": "WELCOME"
           }
         ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "stop",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      },
+      {
+        "data": [
+          {
+            "text": "cancel",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
       }
     ]
   }

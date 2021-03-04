@@ -1,86 +1,106 @@
 {
-	"invocation": "my test app",
-	"intents": [
-		{
-			"name": "EventInfoIntent",
-			"phrases": [
-				"event",
-				"voice event",
-				"next event"
-			]
-		},
-		{
-			"name": "YesIntent",
-			"phrases": [
-				"yes",
-				"yeah",
-				"ok",
-				"alright",
-				"yep",
-				"yo",
-				"okay",
-				"sure",
-				"yes please",
-				"yeah please"
-			],
-			"alexa": {
-				"name": "AMAZON.YesIntent",
-				"samples": []
-			}
-		},
-		{
-			"name": "NoIntent",
-			"phrases": [
-				"no",
-				"nope",
-				"na",
-				"don't",
-				"I don't"
-			],
-			"alexa": {
-				"name": "AMAZON.NoIntent",
-				"samples": []
-			}
-		}
-	],
-	"alexa": {
-		"interactionModel": {
-			"languageModel": {
-				"intents": [
-					{
-						"name": "AMAZON.CancelIntent",
-						"samples": []
-					},
-					{
-						"name": "AMAZON.HelpIntent",
-						"samples": []
-					},
-					{
-						"name": "AMAZON.StopIntent",
-						"samples": []
-					}
-				]
-			}
-		}
-	},
-	"dialogflow": {
-		"intents": [
-			{
-				"name": "Default Fallback Intent",
-				"auto": true,
-				"webhookUsed": true,
-				"fallbackIntent": true
-			},
-			{
-				"name": "Default Welcome Intent",
-				"auto": true,
-				"webhookUsed": true,
-				"events": [
-					{
-						"name": "WELCOME"
-					}
-				]
-			}
-		]
-	}
+  "invocation": "my test app",
+  "intents": [
+    {
+      "name": "EventInfoIntent",
+      "phrases": [
+        "event",
+        "voice event",
+        "next event"
+      ]
+    },
+    {
+      "name": "YesIntent",
+      "phrases": [
+        "yes",
+        "yeah",
+        "ok",
+        "alright",
+        "yep",
+        "yo",
+        "okay",
+        "sure",
+        "yes please",
+        "yeah please"
+      ],
+      "alexa": {
+        "name": "AMAZON.YesIntent",
+        "samples": []
+      }
+    },
+    {
+      "name": "NoIntent",
+      "phrases": [
+        "no",
+        "nope",
+        "na",
+        "don't",
+        "I don't"
+      ],
+      "alexa": {
+        "name": "AMAZON.NoIntent",
+        "samples": []
+      }
+    }
+  ],
+  "alexa": {
+    "interactionModel": {
+      "languageModel": {
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          }
+        ]
+      }
+    }
+  },
+  "dialogflow": {
+    "intents": [
+      {
+        "name": "Default Fallback Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "fallbackIntent": true
+      },
+      {
+        "name": "Default Welcome Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "events": [
+          {
+            "name": "WELCOME"
+          }
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "stop",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      },
+      {
+        "data": [
+          {
+            "text": "cancel",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      }
+    ]
+  }
 }

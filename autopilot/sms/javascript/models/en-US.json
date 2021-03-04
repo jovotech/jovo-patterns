@@ -42,23 +42,43 @@
     }
   },
   "dialogflow": {
-		"intents": [
-			{
-				"name": "Default Fallback Intent",
-				"auto": true,
-				"webhookUsed": true,
-				"fallbackIntent": true
-			},
-			{
-				"name": "Default Welcome Intent",
-				"auto": true,
-				"webhookUsed": true,
-				"events": [
-					{
-						"name": "WELCOME"
-					}
-				]
-			}
-		]
-	}
+    "intents": [
+      {
+        "name": "Default Fallback Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "fallbackIntent": true
+      },
+      {
+        "name": "Default Welcome Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "events": [
+          {
+            "name": "WELCOME"
+          }
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "stop",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      },
+      {
+        "data": [
+          {
+            "text": "cancel",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      }
+    ]
+  }
 }

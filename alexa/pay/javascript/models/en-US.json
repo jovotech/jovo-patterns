@@ -86,6 +86,26 @@
           }
         ]
       }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "stop",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      },
+      {
+        "data": [
+          {
+            "text": "cancel",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      }
     ]
   }
 }

@@ -3,11 +3,20 @@
   "intents": [
     {
       "name": "HelloWorldIntent",
-      "phrases": ["hello", "say hello", "say hello world"]
+      "phrases": [
+        "hello",
+        "say hello",
+        "say hello world"
+      ]
     },
     {
       "name": "MyNameIsIntent",
-      "phrases": ["{name}", "my name is {name}", "i am {name}", "you can call me {name}"],
+      "phrases": [
+        "{name}",
+        "my name is {name}",
+        "i am {name}",
+        "you can call me {name}"
+      ],
       "inputs": [
         {
           "name": "name",
@@ -56,6 +65,26 @@
             "name": "WELCOME"
           }
         ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "stop",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      },
+      {
+        "data": [
+          {
+            "text": "cancel",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
       }
     ]
   }

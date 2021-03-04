@@ -23,7 +23,12 @@
     },
     {
       "name": "DontKnowIntent",
-      "phrases": ["ich weiss es nicht", "keine Ahnung", "kein Plan", "weiss nicht"],
+      "phrases": [
+        "ich weiss es nicht",
+        "keine Ahnung",
+        "kein Plan",
+        "weiss nicht"
+      ],
       "inputs": []
     },
     {
@@ -31,35 +36,64 @@
       "alexa": {
         "name": "AMAZON.CancelIntent"
       },
-      "phrases": ["abbruch", "brich ab", "bitte brich ab"]
+      "phrases": [
+        "abbruch",
+        "brich ab",
+        "bitte brich ab"
+      ]
     },
     {
       "name": "HelpIntent",
       "alexa": {
         "name": "AMAZON.HelpIntent"
       },
-      "phrases": ["Hilfe", "hilf mir", "kannst du mir helfen", "hilf mir bitte", "was kannst du mir sagen"]
+      "phrases": [
+        "Hilfe",
+        "hilf mir",
+        "kannst du mir helfen",
+        "hilf mir bitte",
+        "was kannst du mir sagen"
+      ]
     },
     {
       "name": "StopIntent",
       "alexa": {
         "name": "AMAZON.StopIntent"
       },
-      "phrases": ["stop", "stop bitte", "hör auf", "bitte hör auf"]
+      "phrases": [
+        "stop",
+        "stop bitte",
+        "hör auf",
+        "bitte hör auf"
+      ]
     },
     {
       "name": "YesIntent",
       "alexa": {
         "name": "AMAZON.YesIntent"
       },
-      "phrases": ["yes", "yeah", "yep", "sicher", "okay", "ja", "jo"]
+      "phrases": [
+        "yes",
+        "yeah",
+        "yep",
+        "sicher",
+        "okay",
+        "ja",
+        "jo"
+      ]
     },
     {
       "name": "NoIntent",
       "alexa": {
         "name": "AMAZON.NoIntent"
       },
-      "phrases": ["no", "nope", "nein", "ne", "nö"]
+      "phrases": [
+        "no",
+        "nope",
+        "nein",
+        "ne",
+        "nö"
+      ]
     },
     {
       "name": "RepeatIntent",
@@ -99,6 +133,26 @@
             "name": "WELCOME"
           }
         ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "stop",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
+      },
+      {
+        "data": [
+          {
+            "text": "cancel",
+            "userDefined": false
+          }
+        ],
+        "isTemplate": false
       }
     ]
   }
